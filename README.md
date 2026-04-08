@@ -13,3 +13,38 @@ The goal is to transform raw data into meaningful insights that support business
 - Power Query (Data Cleaning & Transformation)  
 - Excel (Data Source)
 
+## Dashboard Preview
+
+### Sales Dashboard
+![Sales Dashboard](dashboard.png)
+
+### Sales Forecasting
+![Forecast Dashboard](forecast.png)
+
+## Key Insights
+
+- West region generates the highest sales (~33%)
+- Consumer segment contributes the largest share (~48%)
+- Cash on Delivery (COD) is the most preferred payment mode (~43%)
+
+## 🧮 DAX Measures
+
+Total Sales = SUM(Orders[Sales])
+
+Total Profit = SUM(Orders[Profit])
+
+Sales LY = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date Table'[Date]))
+
+
+
+
+## 💡 Business Recommendations
+
+- Focus marketing efforts on the West region to maximize revenue  
+- Encourage online payment adoption to reduce COD dependency  
+- Increase inventory for high-demand categories like Technology  
+- Plan promotional campaigns during Q4 to leverage peak sales season  
+- Improve logistics in low-performing regions to boost sales  
+- Sales peak during Q4 (October to December)
+- Technology category leads in revenue generation
+- California is the top-performing state
